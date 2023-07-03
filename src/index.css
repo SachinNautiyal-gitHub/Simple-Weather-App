@@ -1,0 +1,192 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+.Navbar{
+  
+  display: flex;
+  height: 10vh;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+  align-items: center;
+
+}
+
+.logo p{
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: brown;
+}
+
+.search{
+ display: flex;
+  width: 20vw;
+  -webkit-box-shadow: 0px 0px 31px -9px rgba(15,14,15,0.8);
+  -moz-box-shadow: 0px 0px 31px -9px rgba(15,14,15,0.8);
+  box-shadow: 0px 0px 31px -9px rgba(15,14,15,0.8);
+  padding: 12px;
+  border-radius:10px;
+}
+
+.search input {
+  border: none;
+  font-size: 18px;
+  padding-left: 6px;
+  width: 15vw;
+  outline: none;
+  margin-right:4vw;
+}
+
+.search i:hover{
+  color: rgb(179, 179, 218);
+  transform: scale(1.5);
+}
+
+
+
+.main{
+
+  display: flex;
+  height: 80vh;
+  align-items: center;
+  justify-content: center;
+  
+
+}
+
+
+.info{
+  width: 50vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 10px;
+
+-webkit-box-shadow: 24px 16px 19px 11px rgba(222,191,222,0.65);
+-moz-box-shadow: 24px 16px 19px 11px rgba(222,191,222,0.65);
+box-shadow: 24px 16px 19px 11px rgba(222,191,222,0.65);
+
+
+
+}
+
+.information{
+  display: flex;
+  flex-direction: column;
+  height:50%;
+}
+
+.cityname{
+  font-size: 24px;
+  font-style: italic;
+  margin: 12px;
+  color: rgb(138, 138, 183);
+} 
+
+.scales{
+  display: flex;
+  justify-content: space-around;
+ 
+
+}
+
+.temprature{
+  font-size: 20px;
+  color: rgb(16, 17, 16);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.celcius{
+  font-size: 120px;
+  color:rgb(48, 168, 136);
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+.description{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+
+}
+
+.desDes{
+  font-size: 10px;
+  color:rgb(185, 185, 201);
+}
+
+.moreinfo{
+
+display: flex;
+align-items: center;
+height: 50px;
+justify-content: space-evenly;
+margin: 10px;
+margin-bottom: 30px;
+
+}
+
+.loding{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.first{
+  font-size: 20px;
+  color: green;
+  margin-bottom:10px;
+}
+
+.second{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+  color: grey;
+}
+
+
+@media only screen and (max-width: 1100px){
+    .moreinfo{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+
+    }
+
+
+    .celcius{
+      font-size: 60px;
+    }
+
+    .serach input{
+      width: 8vw;
+      font-size: 14px;
+      margin-right: 4px;
+    }
+}
+
+
+@media only screen and (max-width: 800px){
+  .info{
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width : 700px){
+  .info{
+    width: 90vw;
+  }
+
+  .logo p{
+    font-size: 14px;
+  }
+}
